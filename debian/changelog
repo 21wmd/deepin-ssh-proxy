@@ -1,6 +1,12 @@
+deepin-ssh-proxy (1.0-1) oneiric; urgency=low
+
+  * change rules for 'dh $@'
+
+ -- Wang Mingdong <wangmingdong@linuxdeepin.com>  Wed, 23 Nov 2011 15:43:29 +0800
+
 deepin-ssh-proxy (1.0) natty; urgency=low
 
-  * 首次从 deepin-tools 拆分出来
+  * Split deepin-tools
 
  -- Leng Ganghua <hiweed@gmail.com>  Wed, 06 Apr 2011 10:05:01 +0800
 
