@@ -1,0 +1,13 @@
+Source: deepin-ssh-proxy
+Section: admin
+Priority: optional
+Maintainer: Leng Ganghua <hiweed@gmail.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: deepin-ssh-proxy
+Architecture: all
+Depends: expect
+Replaces: deepin-tools
+Description: Tools for the Linux Deepin Gnome edition.
+ Bonous ssh-proxy for Deepin.

@@ -1,0 +1,6 @@
+deepin-ssh-proxy (1.0) natty; urgency=low
+
+  * 首次从 deepin-tools 拆分出来
+
+ -- Leng Ganghua <hiweed@gmail.com>  Wed, 06 Apr 2011 10:05:01 +0800
+

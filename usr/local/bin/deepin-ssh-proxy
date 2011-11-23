@@ -1,0 +1,21 @@
+#!/bin/sh
+
+EXEC_FILE=$HOME/.deepin-ssh-proxy.sh
+
+echo "#!/usr/bin/expect" > $EXEC_FILE
+cat /etc/deepin-ssh-proxy.conf >> $EXEC_FILE
+
+cat >> $EXEC_FILE <<EOF
+set timeout 60
+spawn /usr/bin/ssh -D 7070 -p \$PORT -g \$USER@\$SERVER
+expect {
+  "*(yes/no)*" { send "yes\r"}
+  "password:" { send "\$PASSWD\r" }
+}
+interact {
+  timeout 60 { send " "}
+}
+EOF
+
+chmod 700 $EXEC_FILE
+$EXEC_FILE
